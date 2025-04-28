@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --chart-1: 222.2 47.4% 11.2%;
+  --chart-2: 215 27.9% 16.9%;
+  --chart-3: 217.2 32.6% 17.5%;
+  --chart-4: 213 27.9% 16.9%;
+  --chart-5: 215.4 16.3% 46.9%;
+}
+
+.dark {
+  --chart-1: 210 40% 98%;
+  --chart-2: 217.9 10.6% 64.9%;
+  --chart-3: 215 20.2% 65.1%;
+  --chart-4: 220 8.9% 46.1%;
+  --chart-5: 220 14.3% 95.9%;
+}
+
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+}
+
+* {
+  cursor: none;
+}
+
+@media (max-width: 768px) {
+  * {
+    cursor: auto;
+  }
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+* {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+/* Glass effect */
+.glass {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.dark .glass {
+  background: rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
